@@ -1,5 +1,7 @@
+class_name GameManager
 extends Node2D
 
+signal dice_rolled
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,5 +13,6 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		for dice in $DiceHolder.get_children():
 			dice.RollDice()
+			dice_rolled.emit()
 		
 	pass
