@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bxpe5ctmxvrls"]
+
+[ext_resource type="Script" uid="uid://y2j0qf6fmg6s" path="res://Objects/Prefabs/Player.gd" id="1_k70nb"]
+
+[node name="Player" type="Node2D" unique_id=1758653039]
+script = ExtResource("1_k70nb")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=128296153]
+color = Color(0, 1, 1, 1)
+polygon = PackedVector2Array(-12.205927, -29.140575, -0.15534449, -13.139229, 11.794073, -29.140575, 19.794073, -5.140578, 11.794073, 18.859426, -12.205927, 18.859426, -20.205927, -5.140578)
+uv = PackedVector2Array(-8, -16.000004, 16, -16.000002, 16, 24.000004, -8, 24.000004)
