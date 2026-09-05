@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://rkdyvytj45d0"]
+
+[ext_resource type="Script" uid="uid://bep3px7n875gy" path="res://Objects/Prefabs/DiceMold.gd" id="1_4cwlk"]
+
+[node name="Dice" type="Node2D" unique_id=1905145127]
+script = ExtResource("1_4cwlk")
+
+[node name="Label" type="Label" parent="." unique_id=202435713]
+offset_right = 16.0
+offset_bottom = 23.0
+text = "1"
