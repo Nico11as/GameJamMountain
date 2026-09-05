@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://1vrre72lp588" path="res://Scenes/GameManager.gd" id="1_5lt6y"]
 [ext_resource type="PackedScene" uid="uid://rkdyvytj45d0" path="res://Objects/Prefabs/DiceMold.tscn" id="1_b5ayd"]
 [ext_resource type="Script" uid="uid://iu7khfpbulit" path="res://Objects/Scripts/DiceHolder.gd" id="2_8k7wh"]
+[ext_resource type="PackedScene" uid="uid://bmec2pv17v4en" path="res://Objects/Prefabs/MapNode.tscn" id="4_iufkg"]
 
 [node name="TestScene" type="Node2D" unique_id=1022013615]
 script = ExtResource("1_5lt6y")
@@ -34,3 +35,16 @@ position = Vector2(34, 0)
 
 [node name="Dice4" parent="DiceHolder" unique_id=1711357140 instance=ExtResource("1_b5ayd")]
 position = Vector2(65, 0)
+
+[node name="MapNode" parent="." unique_id=1449492765 instance=ExtResource("4_iufkg")]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 259.0
+offset_top = 157.0
+offset_right = 375.0
+offset_bottom = 272.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 57
+text = "5"
