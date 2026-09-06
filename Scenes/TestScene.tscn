@@ -54,40 +54,47 @@ position = Vector2(559, 600)
 
 [node name="Control" type="Node2D" parent="." unique_id=1498919063]
 
-[node name="MapNode" parent="Control" unique_id=1449492765 instance=ExtResource("4_iufkg")]
+[node name="MapNode" parent="Control" unique_id=1449492765 node_paths=PackedStringArray("right") instance=ExtResource("4_iufkg")]
 offset_left = 58.0
 offset_top = 67.0
 offset_right = 158.0
 offset_bottom = 167.0
 text = "4"
 cost = 4
+right = NodePath("../MapNode2")
 
-[node name="MapNode2" parent="Control" unique_id=1182012199 instance=ExtResource("4_iufkg")]
+[node name="MapNode2" parent="Control" unique_id=1182012199 node_paths=PackedStringArray("left") instance=ExtResource("4_iufkg")]
 offset_left = 189.0
 offset_top = 198.0
 offset_right = 289.0
 offset_bottom = 298.0
 text = "7"
 cost = 7
+left = NodePath("../MapNode")
 
-[node name="MapNode3" parent="Control" unique_id=1479443821 instance=ExtResource("4_iufkg")]
+[node name="MapNode3" parent="Control" unique_id=1479443821 node_paths=PackedStringArray("next", "right") instance=ExtResource("4_iufkg")]
 offset_left = 67.0
 offset_top = 340.0
 offset_right = 167.0
 offset_bottom = 440.0
+next = NodePath("../MapNode")
+right = NodePath("../MapNode2")
 
-[node name="MapNode4" parent="Control" unique_id=467172791 instance=ExtResource("4_iufkg")]
+[node name="MapNode4" parent="Control" unique_id=467172791 node_paths=PackedStringArray("left") instance=ExtResource("4_iufkg")]
 offset_left = 327.0
 offset_top = 131.0
 offset_right = 427.0
 offset_bottom = 231.0
 text = "2"
 cost = 2
+left = NodePath("../MapNode2")
 
-[node name="MapNode5" parent="Control" unique_id=1676024559 instance=ExtResource("4_iufkg")]
+[node name="MapNode5" parent="Control" unique_id=1676024559 node_paths=PackedStringArray("next", "left") instance=ExtResource("4_iufkg")]
 offset_left = 334.0
 offset_top = 338.0
 offset_right = 434.0
 offset_bottom = 438.0
 text = "1"
 cost = 1
+next = NodePath("../MapNode4")
+left = NodePath("../MapNode2")
