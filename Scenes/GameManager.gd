@@ -15,6 +15,7 @@ var selected_die: Array[DiceMold]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	node_bought.connect(SacrificeSelectedDice)
 	pass # Replace with function body.
 
 
@@ -26,3 +27,7 @@ func _process(delta: float) -> void:
 			dice_rolled.emit()
 		
 	pass
+
+func SacrificeSelectedDice(_lo) -> void:
+	for dice in selected_die:
+		dice.queue_free()

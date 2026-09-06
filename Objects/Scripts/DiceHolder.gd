@@ -19,4 +19,4 @@ func SumDice() -> void:
 	current_value = 0
 	for dice: DiceMold in game_manager.selected_die:
 		current_value += dice.current_value
-		print(current_value)
+		#print(current_value)

@@ -10,7 +10,7 @@ extends Button
 
 func CheckBuying() -> void:
 	if dice_holder.current_value >= cost && !bought:
-		dice_holder.current_value -= cost
+		#dice_holder.current_value -= cost
 		bought = true
 		game_manager.node_bought.emit(position)
 	pass
