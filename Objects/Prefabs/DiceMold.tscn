@@ -1,14 +1,19 @@
 [gd_scene format=3 uid="uid://rkdyvytj45d0"]
 
 [ext_resource type="Script" uid="uid://bep3px7n875gy" path="res://Objects/Prefabs/DiceMold.gd" id="1_4cwlk"]
+[ext_resource type="Resource" uid="uid://dm2axmrwmqfjt" path="res://Objects/Resources/Premade Resources/D6.tres" id="2_7q28e"]
 
-[node name="Dice" type="Node2D" unique_id=1905145127]
-script = ExtResource("1_4cwlk")
-
-[node name="Label" type="Label" parent="." unique_id=202435713]
-offset_left = -12.0
-offset_top = -26.0
-offset_right = 20.0
-offset_bottom = 24.0
-theme_override_font_sizes/font_size = 36
+[node name="Dice" type="Button" unique_id=574250561]
+anchors_preset = -1
+offset_left = -9.0
+offset_top = -19.5
+offset_right = 9.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
 text = "1"
+script = ExtResource("1_4cwlk")
+dice_resource = ExtResource("2_7q28e")
+
+[connection signal="pressed" from="." to="." method="AddList"]

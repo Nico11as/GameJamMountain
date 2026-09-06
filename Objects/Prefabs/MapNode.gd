@@ -1,8 +1,8 @@
 class_name MapNode
 extends Button
 
-@onready var game_manager: GameManager = $".."
-@onready var dice_holder: DiceManager = $"../DiceHolder"
+@onready var game_manager: GameManager = $"../.."
+@onready var dice_holder: DiceManager = $"../../DiceHolder"
 
 @export_category("Config")
 @export var cost: int = 5

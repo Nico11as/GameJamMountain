@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="DiceResource" format=3 uid="uid://dm2axmrwmqfjt"]
+
+[ext_resource type="Script" uid="uid://bu380ncgm5vuo" path="res://Objects/Resources/DiceResource.gd" id="1_r71bv"]
+
+[resource]
+script = ExtResource("1_r71bv")
+metadata/_custom_type_script = "uid://bu380ncgm5vuo"

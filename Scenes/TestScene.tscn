@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://rkdyvytj45d0" path="res://Objects/Prefabs/DiceMold.tscn" id="1_b5ayd"]
 [ext_resource type="Script" uid="uid://iu7khfpbulit" path="res://Objects/Scripts/DiceHolder.gd" id="2_8k7wh"]
 [ext_resource type="PackedScene" uid="uid://bmec2pv17v4en" path="res://Objects/Prefabs/MapNode.tscn" id="4_iufkg"]
+[ext_resource type="PackedScene" uid="uid://bxpe5ctmxvrls" path="res://Objects/Prefabs/Player.tscn" id="5_0f5h7"]
 
 [node name="TestScene" type="Node2D" unique_id=1022013615]
 script = ExtResource("1_5lt6y")
@@ -25,26 +26,68 @@ position = Vector2(619, 347)
 script = ExtResource("2_8k7wh")
 
 [node name="Dice" parent="DiceHolder" unique_id=1905145127 instance=ExtResource("1_b5ayd")]
-position = Vector2(-28, 0)
+offset_left = -28.0
+offset_top = 0.0
+offset_right = -10.0
+offset_bottom = 31.0
 
 [node name="Dice2" parent="DiceHolder" unique_id=813746251 instance=ExtResource("1_b5ayd")]
-position = Vector2(7, 0)
+offset_left = 7.0
+offset_top = 0.0
+offset_right = 25.0
+offset_bottom = 31.0
 
 [node name="Dice3" parent="DiceHolder" unique_id=785967953 instance=ExtResource("1_b5ayd")]
-position = Vector2(34, 0)
+offset_left = 34.0
+offset_top = 0.0
+offset_right = 52.0
+offset_bottom = 31.0
 
 [node name="Dice4" parent="DiceHolder" unique_id=1711357140 instance=ExtResource("1_b5ayd")]
-position = Vector2(65, 0)
+offset_left = 65.0
+offset_top = 0.0
+offset_right = 83.0
+offset_bottom = 31.0
 
-[node name="MapNode" parent="." unique_id=1449492765 instance=ExtResource("4_iufkg")]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 259.0
-offset_top = 157.0
-offset_right = 375.0
-offset_bottom = 272.0
-size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 57
-text = "5"
+[node name="Player" parent="." unique_id=1758653039 instance=ExtResource("5_0f5h7")]
+position = Vector2(559, 600)
+
+[node name="Control" type="Node2D" parent="." unique_id=1498919063]
+
+[node name="MapNode" parent="Control" unique_id=1449492765 instance=ExtResource("4_iufkg")]
+offset_left = 58.0
+offset_top = 67.0
+offset_right = 158.0
+offset_bottom = 167.0
+text = "4"
+cost = 4
+
+[node name="MapNode2" parent="Control" unique_id=1182012199 instance=ExtResource("4_iufkg")]
+offset_left = 189.0
+offset_top = 198.0
+offset_right = 289.0
+offset_bottom = 298.0
+text = "7"
+cost = 7
+
+[node name="MapNode3" parent="Control" unique_id=1479443821 instance=ExtResource("4_iufkg")]
+offset_left = 67.0
+offset_top = 340.0
+offset_right = 167.0
+offset_bottom = 440.0
+
+[node name="MapNode4" parent="Control" unique_id=467172791 instance=ExtResource("4_iufkg")]
+offset_left = 327.0
+offset_top = 131.0
+offset_right = 427.0
+offset_bottom = 231.0
+text = "2"
+cost = 2
+
+[node name="MapNode5" parent="Control" unique_id=1676024559 instance=ExtResource("4_iufkg")]
+offset_left = 334.0
+offset_top = 338.0
+offset_right = 434.0
+offset_bottom = 438.0
+text = "1"
+cost = 1
